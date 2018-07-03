@@ -1,0 +1,55 @@
+\documentclass[dvipdfmx,11pt,notheorems]{beamer}
+%%%% 和文用 %%%%%
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\usepackage{minijs}%和文用
+\renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+
+%%%% スライドの見た目 %%%%%
+\usetheme{metropolis}
+%\usetheme{simple}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{navigation symbols}{}
+\setbeamercovered{transparent}%好みに応じてどうぞ）
+\setbeamertemplate{footline}[page number]
+\setbeamerfont{footline}{size=\normalsize,series=\bfseries}
+\setbeamercolor{footline}{fg=black,bg=black}
+%%%%%%%%%%
+ 
+%%%%% フォント基本設定 %%%%%
+\usepackage[T1]{fontenc}%8bit フォント
+\usepackage{textcomp}%欧文フォントの追加
+\usepackage[utf8]{inputenc}%文字コードをUTF-8
+\usepackage{otf}%otfパッケージ
+\usepackage{lxfonts}%数式・英文ローマン体を Lxfont にする
+\usepackage{bm}%数式太字
+%%%%%%%%%%
+
+\title[]{スライドタイトル}%[略タイトル]{タイトル}
+\author[]{氏名}%[略名前]{名前}
+\institute[]{所属}%[略所属]{所属}
+\date{\today}%日付
+
+
+\begin{document}
+
+\begin{frame}[plain]\frametitle{}
+\titlepage %表紙
+\end{frame}
+
+\begin{frame}\frametitle{目次}
+\tableofcontents %目次
+\end{frame}
+
+\section{セクション名 1}
+  \begin{frame}\frametitle{フレームタイトル}
+    内容内容内容
+  \end{frame}
+  
+\section{セクション名 2}
+  \begin{frame}\frametitle{フレームタイトル}
+    内容内容内容
+  \end{frame}
+
+\end{document}
