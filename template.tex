@@ -1,31 +1,21 @@
-\documentclass[dvipdfmx,11pt,notheorems]{beamer}
-%%%% 和文用 %%%%%
+\documentclass[unicode,12pt,aspectratio=169]{beamer}
 \usepackage{bxdpx-beamer}
-\usepackage{pxjahyper}
-\usepackage{minijs}%和文用
-\renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{zxjatype}
+\usepackage{xeCJK}
+\setCJKmainfont{IPAPMincho}
+\setCJKsansfont{IPAPGothic}
+\setCJKmonofont{IPAGothic}
 
-%%%% スライドの見た目 %%%%%
-\usetheme{metropolis}
-%\usetheme{simple}
-\usefonttheme{professionalfonts}
-\setbeamertemplate{frametitle}[default][center]
-\setbeamertemplate{navigation symbols}{}
-\setbeamercovered{transparent}%好みに応じてどうぞ）
-\setbeamertemplate{footline}[page number]
-\setbeamerfont{footline}{size=\normalsize,series=\bfseries}
-\setbeamercolor{footline}{fg=black,bg=black}
-%%%%%%%%%%
+\usepackage{bm}
+\usepackage{color}
+\usepackage{listings}
+\lstset{language={C}, basicstyle=\ttfamily\footnotesize,
+  commentstyle=\textit, classoffset=1, frame=tRBl, framesep=5pt,
+  numbers=left, stepnumber=1, numberstyle=\footnotesize, tabsize=2 }
+\usepackage{slashbox}
+\usepackage{hyperref}
  
-%%%%% フォント基本設定 %%%%%
-\usepackage[T1]{fontenc}%8bit フォント
-\usepackage{textcomp}%欧文フォントの追加
-\usepackage[utf8]{inputenc}%文字コードをUTF-8
-\usepackage{otf}%otfパッケージ
-\usepackage{lxfonts}%数式・英文ローマン体を Lxfont にする
-\usepackage{bm}%数式太字
-%%%%%%%%%%
-
 \title[]{スライドタイトル}%[略タイトル]{タイトル}
 \author[]{氏名}%[略名前]{名前}
 \institute[]{所属}%[略所属]{所属}
@@ -34,12 +24,10 @@
 
 \begin{document}
 
-\begin{frame}[plain]\frametitle{}
-\titlepage %表紙
-\end{frame}
+\frame{\titlepage}
 
 \begin{frame}\frametitle{目次}
-\tableofcontents %目次
+  \tableofcontents %目次
 \end{frame}
 
 \section{セクション名 1}

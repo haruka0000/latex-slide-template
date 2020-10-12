@@ -4,4 +4,6 @@
 *.nav
 *.out
 *.snm~
+*.snm
 *.toc
+*.tex~
