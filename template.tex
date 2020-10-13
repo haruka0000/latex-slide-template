@@ -1,20 +1,28 @@
 \documentclass[unicode,12pt,aspectratio=169]{beamer}
+\usepackage[no-math]{fontspec}
 \usepackage{bxdpx-beamer}
-\usetheme[progressbar=frametitle]{metropolis}
 \usepackage{zxjatype}
-\usepackage{xeCJK}
-\setCJKmainfont{IPAPMincho}
-\setCJKsansfont{IPAPGothic}
-\setCJKmonofont{IPAGothic}
 
+%%%% テーマ %%%%
+\usetheme[progressbar=frametitle]{metropolis}
+
+%%%% 欧文フォント設定 %%%%
+\setsansfont[
+  BoldFont={Noto Serif CJK JP Black}]{Noto Serif CJK JP Medium}
+
+%%%% 日本語フォント設定 %%%%
+\setCJKmainfont[
+  BoldFont={Noto Sans CJK JP Bold}, 
+  Scale=0.98]{Noto Sans CJK JP DemiLight}
+\CJKspace
+
+%%%% その他パッケージ %%%%
 \usepackage{bm}
 \usepackage{color}
 \usepackage{listings}
-\lstset{language={C}, basicstyle=\ttfamily\footnotesize,
-  commentstyle=\textit, classoffset=1, frame=tRBl, framesep=5pt,
-  numbers=left, stepnumber=1, numberstyle=\footnotesize, tabsize=2 }
 \usepackage{slashbox}
 \usepackage{hyperref}
+% \usepackage{here}
  
 \title[]{スライドタイトル}%[略タイトル]{タイトル}
 \author[]{氏名}%[略名前]{名前}
